@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
 
-resources :post, only: :show
+get 'posts/:id', to: 'posts#show'
+#resources :post, only: :show
 end
